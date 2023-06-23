@@ -6,3 +6,5 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 
 1. Javascript Quote Generator
 2. Javascript Modal Window
+3. Javascript Infinite Scroll
+4. Javascript Digital Clock
