@@ -8,3 +8,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 2. Javascript Modal Window
 3. Javascript Infinite Scroll
 4. Javascript Digital Clock
+5. Navigation UI Animation
