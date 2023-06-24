@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --primaryColor: #fff;
+  --navColor1: #e91e63;
+  --navColor2: #00acc1;
+  --navColor3: #9c27b0;
+  --navColor4: #4caf50;
+  --navColor5: #ff9800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background: #000;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(-100vw);
+}
+.overlay.overlay-slide-right {
+  transition: all 0.4s ease-in-out;
+  transform: translateX(0);
+}
+.overlay.overlay-slide-left {
+  transition: all 0.8s ease-in-out;
+  transform: translateX(-100vw);
+}
+
+nav,
+nav ul {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  list-style: none;
+}
+nav ul li {
+  height: 20%;
+  overflow: hidden;
+}
+nav ul li:nth-of-type(1) {
+  background-color: var(--navColor1);
+}
+nav ul li:nth-of-type(2) {
+  background-color: var(--navColor2);
+}
+nav ul li:nth-of-type(3) {
+  background-color: var(--navColor3);
+}
+nav ul li:nth-of-type(4) {
+  background-color: var(--navColor4);
+}
+nav ul li:nth-of-type(5) {
+  background-color: var(--navColor5);
+}
+nav ul a {
+  position: relative;
+  top: 45%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  transition: all 0.3s;
+}
+nav ul a:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.slide-in-1 {
+  animation: slide-in 0.4s linear 0.2s both;
+}
+
+.slide-in-2 {
+  animation: slide-in 0.4s linear 0.4s both;
+}
+
+.slide-in-3 {
+  animation: slide-in 0.4s linear 0.6s both;
+}
+
+.slide-in-4 {
+  animation: slide-in 0.4s linear 0.8s both;
+}
+
+.slide-in-5 {
+  animation: slide-in 0.4s linear 1s both;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slide-out-1 {
+  animation: slide-out 0.3s linear 0.5s both;
+}
+
+.slide-out-2 {
+  animation: slide-out 0.3s linear 0.4s both;
+}
+
+.slide-out-3 {
+  animation: slide-out 0.3s linear 0.3s both;
+}
+
+.slide-out-4 {
+  animation: slide-out 0.3s linear 0.2s both;
+}
+
+.slide-out-5 {
+  animation: slide-out 0.3s linear 0.1s both;
+}
+
+@keyframes slide-out {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.menu-bars {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 10;
+  display: inline;
+  cursor: pointer;
+}
+.menu-bars .bar1,
+.menu-bars .bar2,
+.menu-bars .bar3 {
+  width: 35px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+.menu-bars.change .bar1 {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+.menu-bars.change .bar2 {
+  opacity: 0;
+}
+.menu-bars.change .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--primaryColor);
+}
+section#home {
+  background-image: url("https://images.unsplash.com/photo-1485795959911-ea5ebf41b6ae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1181&q=80");
+  background-size: cover;
+  background-position: center center;
+}
+section#home a {
+  position: absolute;
+  z-index: 2;
+  top: 1.5rem;
+  left: 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  padding-bottom: 5px;
+  color: var(--primaryColor);
+  border-bottom: 1px solid var(--primaryColor);
+}
+section#about {
+  background-color: var(--navColor2);
+}
+section#skills {
+  background-color: var(--navColor3);
+}
+section#projects {
+  background-color: var(--navColor4);
+}
+section#contact {
+  background-color: var(--navColor5);
+}
+
+@media (max-width: 600px) {
+  section#home a {
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .menu-bars {
+    top: 0.5rem;
+    right: 1rem;
+  }
+}
