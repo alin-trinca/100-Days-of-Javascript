@@ -1,0 +1,37 @@
+<video class="video-bg" loop muted autoplay>
+  <source src="https://assets.mixkit.co/videos/preview/mixkit-old-pocket-watch-on-snow-39831-large.mp4" class="video">
+</video>
+<div class="video-overlay"></div>
+
+<div class="container">
+
+  <div class="input-container" id="input-container">
+    <h1>Create a custom countdown</h1>
+    <form class="form" id="countdownForm">
+      <label for="title">Title</label>
+      <input type="text" id="title" placeholder="What are you counting down to?">
+      <label for="date-picker">Select a date</label>
+      <input type="date" id="date-picker">
+      <div class="alert" id="alert" hidden>Please select a date!</div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <div class="countdown" id="countdown" hidden>
+    <h1 id="countdown-title"></h1>
+    <ul>
+      <li><span></span>Days</li>
+      <li><span></span>Hours</li>
+      <li><span></span>Minutes</li>
+      <li><span></span>Seconds</li>
+    </ul>
+    <button id="countdown-button">Reset</button>
+  </div>
+
+  <div class="complete" id="complete" hidden>
+    <h1>Countdown Complete</h1>
+    <p id="complete-info">Countdown Finished on 05-05-2023</p>
+    <button id="complete-button">New Countdown</button>
+  </div>
+
+</div>

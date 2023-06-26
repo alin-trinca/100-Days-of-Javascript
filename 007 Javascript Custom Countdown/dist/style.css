@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #1c2539;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+.video-bg {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+.video-bg .video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.container {
+  min-width: 580px;
+  min-height: 305px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: relative;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+.container h1 {
+  font-size: 32px;
+  line-height: 1;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.container .alert {
+  color: #da4453;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+.container button {
+  display: block;
+  margin: auto;
+  background-color: #f64a00;
+  color: #fff;
+  padding: 14px 50px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.container button:hover {
+  background-color: #e74500;
+  transition: all 0.3s;
+}
+
+.input-container label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.input-container input[type=text],
+.input-container input[type=date] {
+  font-size: 18px;
+  line-height: 28px;
+  width: 100%;
+  max-width: 450px;
+  padding: 0 15px;
+  color: #5d666f;
+  background: #fff;
+  height: 55px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+}
+
+.countdown {
+  width: 100%;
+}
+.countdown ul {
+  display: flex;
+  justify-content: space-around;
+}
+.countdown li {
+  display: inline-block;
+  text-align: center;
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 20%;
+}
+.countdown li span {
+  font-size: 40px;
+  font-weight: bold;
+  display: block;
+}
+
+.complete {
+  width: 100%;
+}
+.complete p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .video-bg {
+    height: 100vh;
+  }
+
+  video {
+    object-fit: cover;
+    object-position: 70%;
+    margin-top: -1px;
+  }
+
+  .container {
+    min-width: unset;
+    width: 95%;
+    min-height: 245px;
+    padding: 15px 10px;
+    margin: 10px;
+  }
+  .container button {
+    width: 100%;
+  }
+
+  .countdown li {
+    font-size: 14px;
+  }
+  .countdown li span {
+    font-size: 30px;
+  }
+}
