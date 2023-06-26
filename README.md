@@ -10,3 +10,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 4. Javascript Digital Clock
 5. Navigation UI Animation
 6. Javascript Picture in Picture
+7. Javascript Custom Countdown
