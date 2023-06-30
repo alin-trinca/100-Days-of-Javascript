@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background: #0f172a;
+}
+
+.container {
+  width: calc(100% - 30px);
+  max-width: 330px;
+  margin: 15px;
+}
+
+.coin {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+
+  &:last-child {
+    margin: 0;
+  }
+
+  &__name {
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    text-align: right;
+  }
+
+  &__value {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__change {
+    display: block;
+    color: #aaa;
+    font-size: 16px;
+  }
+
+  &--rising {
+    background: linear-gradient(90deg, #202022, #4eb64510);
+
+    .coin__value {
+      color: #8cc152;
+    }
+  }
+
+  &--falling {
+    background: linear-gradient(90deg, #202022, #aa444425);
+
+    .coin__value {
+      color: #da4453;
+    }
+  }
+}
