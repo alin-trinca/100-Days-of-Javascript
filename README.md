@@ -12,3 +12,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 6. Javascript Picture in Picture
 7. Javascript Custom Countdown
 8. Javascript Analog Clock
+9. Javascript Crypto Price App
