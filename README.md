@@ -13,3 +13,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 7. Javascript Custom Countdown
 8. Javascript Analog Clock
 9. Javascript Crypto Price App
+10. Javascript Gradient Generator
