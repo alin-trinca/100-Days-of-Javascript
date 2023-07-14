@@ -2,3 +2,4 @@
 
 A Pen created on CodePen.io. Original URL: [https://codepen.io/alin_trinca/pen/eYQpEPw](https://codepen.io/alin_trinca/pen/eYQpEPw).
 
+![Javascript Gradient Generator Screenshot](javascript-gradient-generator.png)
