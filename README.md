@@ -15,3 +15,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 9. Javascript Crypto Price App
 10. Javascript Gradient Generator
 11. Javascript Password Generator
+12. Javascript Aspect Ratio Calculator
