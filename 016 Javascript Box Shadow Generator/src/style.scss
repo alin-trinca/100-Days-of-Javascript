@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #b9e0f2;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+.card {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #0f172a;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+
+  .preview {
+    padding: 20px 0 50px;
+
+    &__item {
+      background-color: #222f43;
+      width: 150px;
+      height: 150px;
+      position: relative;
+      margin: auto;
+      border-radius: 30px;
+      box-shadow: 5px 15px 30px 5px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .settings {
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 15px 25px;
+
+    &__range {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      input[type="range"] {
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+
+    &__input {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+
+      input[type="checkbox"] {
+        cursor: pointer;
+      }
+    }
+
+    &__color {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 5px;
+
+      input[type="color"] {
+        width: 25px;
+        height: 25px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+    }
+
+    label {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+  }
+
+  .code {
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    gap: 10px;
+    margin-top: 20px;
+
+    button {
+      background-color: #0ea5ea;
+      border-radius: 6px;
+      cursor: pointer;
+      border: none;
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #fff;
+    }
+
+    textarea {
+      resize: none;
+      padding: 5px;
+      border: 1px solid #0ea5ea;
+      border-radius: 6px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .card {
+    .settings,
+    .code {
+      grid-template-columns: unset;
+    }
+
+    .code {
+      textarea {
+        height: 60px;
+      }
+      button {
+        padding: 8px;
+      }
+    }
+  }
+}
