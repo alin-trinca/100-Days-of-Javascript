@@ -20,3 +20,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 14. Javascript Tradingview API
 15. Javascript Internet Speed Test
 16. Javascript Box Shadow Generator
+17. Light & Dark Mode
