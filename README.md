@@ -22,3 +22,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 16. Javascript Box Shadow Generator
 17. Light & Dark Mode
 18. Javascript Chart
+19. Javascript Video Player
