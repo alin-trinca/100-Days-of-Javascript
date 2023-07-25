@@ -1,0 +1,59 @@
+<div class="player">
+  <video class="video" src='https://assets.mixkit.co/videos/preview/mixkit-countryside-meadow-4075-large.mp4' playsinline></video>
+
+  <div class="controls">
+    <div class="controls__wrapper">
+
+      <!-- Progress Bar -->
+      <div class="progress-range" title="Seek">
+        <div class="progress-bar"></div>
+      </div>
+
+      <div class="controls__group">
+        <div class="controls__left">
+
+          <!-- Play/Pause -->
+          <div class="play-controls">
+            <i class="fa-solid fa-play" title="Play" id="play-btn"></i>
+          </div>
+
+          <!-- Volume -->
+          <div class="volume">
+            <div class="volume-icon">
+              <i class="fa-solid fa-volume-up" title="Mute" id="volume-icon"></i>
+            </div>
+            <div class="volume-range" title="Change Volume">
+              <div class="volume-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Controls -->
+        <div class="controls__right">
+
+          <!-- Speed -->
+          <div class="speed" title="Playback Rate">
+            <select name="playbackRate" class="player-speed">
+              <option value="0.5">0.5 x</option>
+              <option value="0.75">0.75 x</option>
+              <option value="1" selected>1.0 x</option>
+              <option value="1.5">1.5 x</option>
+              <option value="2">2.0 x</option>
+            </select>
+          </div>
+
+          <!-- Time -->
+          <div class="time">
+            <span class="time-elapsed">00:00 / </span>
+            <span class="time-duration">02:49</span>
+          </div>
+
+          <!-- Fullscreen -->
+          <div class="fullscreen">
+            <i class="fa-solid fa-expand"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

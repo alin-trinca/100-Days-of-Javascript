@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --primary-color: #0ea5ea;
+  --font-color: #b9e0f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+i[class^=fa-] {
+  color: var(--font-color);
+  font-size: 35px;
+}
+
+.player {
+  max-width: 80vw;
+  min-width: 800px;
+  border: 5px solid #131c31;
+  border-radius: 10px;
+  background-color: #131c31;
+  position: relative;
+  cursor: pointer;
+}
+
+video {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+video.video-fullscreen {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.controls {
+  width: 100%;
+  height: 30%;
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  cursor: default;
+}
+.controls__wrapper {
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  height: 95px;
+  margin-top: -95px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  opacity: 0;
+  transition: all 0.5s ease-out 2s;
+}
+.controls:hover .controls__wrapper {
+  opacity: 1;
+  transition: all 0.2s ease-out;
+}
+.controls .progress-range {
+  height: 8px;
+  width: calc(100% - 30px);
+  background: rgba(202, 202, 202, 0.5);
+  margin: auto;
+  border-radius: 10px;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  cursor: pointer;
+  transition: height 0.1s ease-in-out;
+  z-index: 10;
+}
+.controls .progress-range:hover {
+  height: 10px;
+}
+.controls .progress-range .progress-bar {
+  background: var(--primary-color);
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+.controls__group {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.controls__left, .controls__right {
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  top: 40px;
+}
+.controls__left {
+  justify-content: flex-start;
+  margin-left: 15px;
+  /* Play & Pause */
+  /* Volume */
+}
+.controls__left .play-controls {
+  margin-right: 15px;
+}
+.controls__left .play-controls .fa-play:hover,
+.controls__left .play-controls .fa-pause:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+.controls__left .volume .volume-icon {
+  cursor: pointer;
+}
+.controls__left .volume .volume-range {
+  height: 8px;
+  width: 100px;
+  background: rgba(70, 70, 70, 0.5);
+  border-radius: 10px;
+  position: relative;
+  top: -21px;
+  left: 50px;
+  cursor: pointer;
+}
+.controls__left .volume .volume-bar {
+  background: var(--font-color);
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.2s ease-in;
+}
+.controls__left .volume .volume-bar:hover {
+  background: var(--primary-color);
+}
+.controls__right {
+  justify-content: flex-end;
+  margin-right: 15px;
+  /* Playback Speed */
+  /* Elapsed Time & Duration */
+  /* Fullscreen */
+}
+.controls__right .speed {
+  margin-right: 15px;
+  position: relative;
+  top: 10px;
+}
+.controls__right select,
+.controls__right option {
+  cursor: pointer;
+  font-family: "Mulish", sans-serif;
+}
+.controls__right select {
+  appearance: none;
+  background-color: transparent;
+  color: var(--font-color);
+  border: none;
+  font-size: 18px;
+  position: relative;
+  top: -2.5px;
+  border-radius: 5px;
+}
+.controls__right select:focus {
+  outline: none;
+}
+.controls__right select > option {
+  background-color: rgba(0, 0, 0, 0.9);
+  border: none;
+  font-size: 14px;
+}
+.controls__right .time {
+  margin-right: 15px;
+  color: var(--font-color);
+  font-weight: bold;
+  user-select: none;
+  position: relative;
+  top: 8px;
+}
+.controls__right .fullscreen {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .player {
+    max-width: 95vw;
+    min-width: unset;
+  }
+}
+@media screen and (max-width: 575px) {
+  i[class^=fa-] {
+    font-size: 20px;
+  }
+
+  .controls__wrapper {
+    height: 50px;
+  }
+  .controls__group {
+    position: relative;
+    top: -25px;
+  }
+  .controls .controls__left .volume .volume-range {
+    width: 50px;
+    left: 30px;
+    top: -15px;
+  }
+  .controls .speed {
+    top: 3px;
+  }
+  .controls .time {
+    top: 5px;
+    font-size: 12px;
+  }
+  .controls select {
+    font-size: 12px;
+  }
+  .controls .progress-range {
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 0;
+  }
+  .controls .progress-range .progress-bar {
+    border-radius: 0;
+  }
+}
