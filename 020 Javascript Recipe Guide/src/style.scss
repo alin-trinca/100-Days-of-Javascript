@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+.card {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  position: relative;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 15px;
+
+  input {
+    font-size: 15px;
+    padding: 10px;
+    border: 2px solid #0ea5ea;
+    background: transparent;
+    border-radius: 4px;
+    color: #fff;
+  }
+
+  button {
+    font-size: 1.6rem;
+    background-color: #0ea5ea;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(#0ea5ea, 10%);
+    }
+  }
+}
+
+.recipe {
+  text-align: center;
+
+  &__info {
+    background-color: #b9e0f2;
+    color: #131c31;
+    position: relative;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+
+    h2 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    h4 {
+      font-size: 2rem;
+      font-weight: 400;
+    }
+  }
+
+  img {
+    display: block;
+    width: 35%;
+    margin: 20px auto;
+    border-radius: 10px;
+  }
+
+  &__ingredients {
+    h3 {
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    ul {
+      font-size: 1.5rem;
+      position: relative;
+      text-align: left;
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 12px 16px;
+      padding: 15px 0 0 15px;
+      text-transform: capitalize;
+    }
+  }
+}
+
+#show-recipe {
+  background-color: #0ea5ea;
+  padding: 10px 30px;
+  margin-top: 30px;
+  font-size: 1.6rem;
+  color: #fff;
+  border: none;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: darken(#0ea5ea, 10%);
+  }
+}
+
+#recipe {
+  position: absolute;
+  background-color: #0f172a;
+  min-height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 10px;
+  display: none;
+}
+
+#instructions {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 45px 25px 25px;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+#hide-recipe {
+  font-size: 1.5rem;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  background-color: #0ea5ea;
+  border: none;
+  top: 10px;
+  right: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
