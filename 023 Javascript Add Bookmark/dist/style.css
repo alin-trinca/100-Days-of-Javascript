@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+#show-modal {
+  font-size: 2rem;
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  padding: 1rem 2.5rem;
+  margin: 50px 0 30px;
+  border: 2px solid #0ea5ea;
+  background: transparent;
+  color: #fff;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  width: 250px;
+}
+#show-modal:hover:hover, #show-modal:hover:active {
+  background: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .item {
+  background-color: #131c31;
+  margin: 15px;
+  padding: 10px 15px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+.container .item:hover {
+  background-color: #222f43;
+  transition: all 0.3s ease-in-out;
+}
+.container .name {
+  margin-right: 20px;
+}
+.container .name img {
+  height: 20px;
+  width: 20px;
+  vertical-align: sub;
+  margin-right: 5px;
+}
+.container .name a {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.container .name a:link, .container .name a:visited {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.container .name a:hover, .container .name a:active {
+  color: #b9e0f2;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.container .fa-solid {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.container .fa-solid:hover {
+  color: #e9573f;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.show-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Form */
+}
+.show-modal .modal {
+  background-color: #131c31;
+  color: #b9e0f2;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  max-width: 95%;
+  width: 360px;
+  animation: modalopen 1s;
+}
+.show-modal .modal__header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.show-modal .modal__header h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+.show-modal .modal__header .close-icon {
+  color: #b9e0f2;
+  font-size: 2.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.show-modal .modal__header .close-icon:hover {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.show-modal .modal__content {
+  padding: 10px 15px;
+}
+.show-modal .modal__content .form-group {
+  margin-bottom: 15px;
+}
+.show-modal .modal__content .form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+}
+.show-modal .modal__content .form-input {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #222f43;
+  border-radius: 6px;
+  height: 40px;
+  color: #fff;
+  padding: 5px;
+  outline: none;
+}
+.show-modal .modal__content .form-input:focus {
+  border-color: #fff;
+}
+.show-modal .modal__content button {
+  background-color: #b9e0f2;
+  border: 0;
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.show-modal .modal__content button:hover {
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.show-modal .modal__content .alert {
+  color: #da4453;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 575px) {
+  .container {
+    flex-direction: column;
+  }
+}
+@keyframes modalopen {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
