@@ -28,3 +28,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 22. Javascript Form Validator
 23. Javascript Add Bookmark
 24. Javascript Slider
+25. Javascript Filter
