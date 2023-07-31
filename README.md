@@ -4,7 +4,7 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 
 # Projects:
 
-1. Javascript Quote Generator
+1. [Javascript Quote Generator](https://alin-trinca.github.io/001 Javascript Quote Generator/dist/index.html)
 2. Javascript Modal Window
 3. Javascript Infinite Scroll
 4. Javascript Digital Clock
