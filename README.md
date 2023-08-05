@@ -31,5 +31,5 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 25. [Javascript Filter](https://alin-trinca.github.io/100-Days-of-Javascript/025%20Javascript%20Filter/dist/index.html)
 26. Javascript Marvel Quiz
 27. Javascript Expanding Cards 
-28. Blurry Loading 
-29. Sound Bar
+28. Javascript Blurry Loading 
+29. Javascript Sound Board
