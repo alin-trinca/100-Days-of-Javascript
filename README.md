@@ -33,3 +33,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 27. Javascript Expanding Cards 
 28. Javascript Blurry Loading 
 29. Javascript Sound Board
+30. Javascript Currency Converter
