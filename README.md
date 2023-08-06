@@ -29,3 +29,7 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 23. [Javascript Add Bookmark](https://alin-trinca.github.io/100-Days-of-Javascript/023%20Javascript%20Add%20Bookmark/dist/index.html)
 24. [Javascript Slider](https://alin-trinca.github.io/100-Days-of-Javascript/024%20Javascript%20Slider/dist/index.html)
 25. [Javascript Filter](https://alin-trinca.github.io/100-Days-of-Javascript/025%20Javascript%20Filter/dist/index.html)
+26. Javascript Marvel Quiz
+27. Javascript Expanding Cards 
+28. Javascript Blurry Loading 
+29. Javascript Sound Board
