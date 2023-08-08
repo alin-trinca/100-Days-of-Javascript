@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #0f172a;
+  padding: 50px 0;
+}
+
+.container {
+  width: calc(100% - 30px);
+  max-width: 360px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.square {
+  background-color: #131c31;
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  transition: 2s ease;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
