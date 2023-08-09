@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+button {
+  background-color: #fff;
+  color: #0f172a;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    color: #0ea5ea;
+    outline: none;
+  }
+
+  &:active {
+    transform: scale(0.98);
+  }
+}
+
+#toasts {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  .toast {
+    background-color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+
+    &.success {
+      color: #3c763d;
+      background-color: #b9df90;
+      border-color: #a0d468;
+    }
+
+    &.error {
+      color: #a94442;
+      background-color: #f2838f;
+      border: #ed5565;
+    }
+
+    &.warning {
+      color: #8a6d3b;
+      background-color: #ffdd87;
+      border-color: #ffce54;
+    }
+
+    &.info {
+      color: #1a6451;
+      background-color: #48cfad;
+      border-color: #37bc9b;
+    }
+  }
+}
