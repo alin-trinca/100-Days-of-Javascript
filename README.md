@@ -39,3 +39,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 33. Toast Notifications 
 34. Vertical Slider
 35. Github Profiles
+36. Pong Game
