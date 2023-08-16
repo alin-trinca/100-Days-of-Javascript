@@ -34,3 +34,8 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 28. [Javascript Blurry Loading](https://alin-trinca.github.io/100-Days-of-Javascript/028%20Javascript%20Blurry%20Loading/dist/index.html)
 29. [Javascript Sound Board](https://alin-trinca.github.io/100-Days-of-Javascript/029%20Javascript%20Sound%20Board/dist/index.html)
 30. [Javascript Currency Converter](https://alin-trinca.github.io/100-Days-of-Javascript/030%20Javascript%20Currency%20Converter/dist/index.html)
+31. Live User Filter
+32. Javascript Hoverboard
+33. Toast Notifications 
+34. Vertical Slider
+35. Github Profiles
