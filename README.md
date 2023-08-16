@@ -34,9 +34,9 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 28. [Javascript Blurry Loading](https://alin-trinca.github.io/100-Days-of-Javascript/028%20Javascript%20Blurry%20Loading/dist/index.html)
 29. [Javascript Sound Board](https://alin-trinca.github.io/100-Days-of-Javascript/029%20Javascript%20Sound%20Board/dist/index.html)
 30. [Javascript Currency Converter](https://alin-trinca.github.io/100-Days-of-Javascript/030%20Javascript%20Currency%20Converter/dist/index.html)
-31. Live User Filter
-32. Javascript Hoverboard
-33. Toast Notifications 
-34. Vertical Slider
-35. Github Profiles
-36. Pong Game
+31. [Live User Filter](https://alin-trinca.github.io/100-Days-of-Javascript/031%20Live%20User%20Filter/dist/index.html)
+32. [Javascript Hoverboard](https://alin-trinca.github.io/100-Days-of-Javascript/032%20Javascript%20Hoverboard/dist/index.html)
+33. [Toast Notifications](https://alin-trinca.github.io/100-Days-of-Javascript/033%20Toast%20Notifications/dist/index.html)
+34. [Vertical Slider](https://alin-trinca.github.io/100-Days-of-Javascript/034%20Vertical%20Slider/dist/index.html)
+35. [Github Profiles](https://alin-trinca.github.io/100-Days-of-Javascript/035%20Github%20Profiles/dist/index.html)
+36. [Pong Game](https://alin-trinca.github.io/100-Days-of-Javascript/036%20Pong%20Game/dist/index.html)
