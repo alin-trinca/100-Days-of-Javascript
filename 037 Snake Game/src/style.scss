@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+.wrapper {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  text-align: center;
+  margin: 50px 15px 15px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.details {
+  color: #b8c6dc;
+  font-size: 1.6rem;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.board {
+  height: 250px;
+  width: 100%;
+  display: grid;
+  background: #222f43;
+  grid-template: repeat(50, 1fr) / repeat(50, 1fr);
+
+  .food {
+    background: #e9573f;
+  }
+
+  .head {
+    background: #4a89dc;
+  }
+}
+
+.controls {
+  justify-content: space-between;
+
+  i {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2rem;
+    color: #b8c6dc;
+    width: 20%;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      border-right: 1px solid #222f43;
+    }
+  }
+}
+
+.alert {
+  background-color: #f2838f;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #a94442;
+  padding: 5px 15px;
+  margin: 10px 0;
+  border-radius: 4px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+// @media screen and (max-width: 800px) {
+//   .wrapper {
+//     width: 90vmin;
+//     height: 115vmin;
+//   }
+
+//   .game-details {
+//     font-size: 1rem;
+//     padding: 15px 27px;
+//   }
+
+//   .controls {
+//     display: flex;
+//   }
+
+//   .controls i {
+//     padding: 15px 0;
+//     font-size: 1rem;
+//   }
+// }
