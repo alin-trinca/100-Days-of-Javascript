@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+.game {
+  width: 360px;
+  margin: 20px auto;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  .box {
+    width: 110px;
+    height: 110px;
+    flex-shrink: 0;
+    border: 1px solid #222f43;
+    cursor: pointer;
+
+    &.activeBox {
+      background-color: #0bd1d1;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      font-size: 8rem;
+      line-height: 1;
+    }
+  }
+}
+
+.alert {
+  width: 300px;
+  background-color: #131c31;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+  animation: larger 0.5s;
+  animation-fill-mode: forwards;
+}
+
+button {
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.75rem 3rem;
+  margin-top: 2rem;
+  border: 2px solid #0ea5ea;
+  background: transparent;
+  color: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: #0ea5ea;
+  }
+}
+
+@keyframes larger {
+  from {
+    width: 100px;
+  }
+
+  to {
+    width: 300px;
+  }
+}
