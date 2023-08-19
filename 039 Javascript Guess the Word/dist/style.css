@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+.game {
+  width: calc(100% - 10px);
+  max-width: 360px;
+  text-align: center;
+  margin: 15px;
+  padding: 15px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+.game .type-input {
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+}
+.game .word {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.game .word input {
+  height: 45px;
+  width: 45px;
+  margin: 4px;
+  color: #b9e0f2;
+  border: 2px solid #222f43;
+  background: none;
+  text-align: center;
+  border-radius: 10px;
+  text-transform: uppercase;
+  pointer-events: none;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.game .word input:first-child {
+  margin-left: 0;
+}
+.game .info {
+  margin: 20px 0;
+}
+.game .info p {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+.game .info p span {
+  font-weight: 700;
+}
+.game .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.game .buttons .reset, .game .buttons .showhint {
+  width: 48%;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  padding: 10px 0;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+.game .buttons .showhint {
+  background-color: #0ea5ea;
+  border-radius: 10px;
+}
+.game .buttons .showhint:hover {
+  background-color: #0b83ba;
+}
+.game .buttons .reset {
+  background-color: transparent;
+}
+.game .buttons .reset:hover {
+  color: #0ea5ea;
+}
+.game .notification {
+  background-color: #ffdd87;
+  border: #ffce54;
+  font-size: 1.6rem;
+  color: #8a6d3b;
+  padding: 10px;
+  border-radius: 4px;
+  margin: 10px 0;
+}
