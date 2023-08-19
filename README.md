@@ -41,3 +41,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 35. [Github Profiles](https://alin-trinca.github.io/100-Days-of-Javascript/035%20Github%20Profiles/dist/index.html)
 36. [Pong Game](https://alin-trinca.github.io/100-Days-of-Javascript/036%20Pong%20Game/dist/index.html)
 37. [Snake Game](https://alin-trinca.github.io/100-Days-of-Javascript/037%20Snake%20Game/dist/index.html)
+38. [XO Game](https://alin-trinca.github.io/100-Days-of-Javascript/038%20XO%20Game/dist/index.html)
