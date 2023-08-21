@@ -44,3 +44,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 38. [XO Game](https://alin-trinca.github.io/100-Days-of-Javascript/038%20XO%20Game/dist/index.html)
 39. [Javascript Guess the Word](https://alin-trinca.github.io/100-Days-of-Javascript/039%20Javascript%20Guess%20the%20Word/dist/index.html)
 40. [Pig Game](https://alin-trinca.github.io/100-Days-of-Javascript/040%20Pig%20Game/dist/index.html)
+41. [Temperature Converter](https://alin-trinca.github.io/100-Days-of-Javascript/041%20Tmeperature%20Converter/dist/index.html)
