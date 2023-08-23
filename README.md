@@ -46,3 +46,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 40. [Pig Game](https://alin-trinca.github.io/100-Days-of-Javascript/040%20Pig%20Game/dist/index.html)
 41. [Temperature Converter](https://alin-trinca.github.io/100-Days-of-Javascript/041%20Temperature%20Converter/dist/index.html)
 42. [Random Number Generator](https://alin-trinca.github.io/100-Days-of-Javascript/042%20Random%20Number%20Generator/dist/index.html)
+43. [Real Time Character Counter](https://alin-trinca.github.io/100-Days-of-Javascript/043%20Real%20Time%20Character%20Counter/dist/index.html)
