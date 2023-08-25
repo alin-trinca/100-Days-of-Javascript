@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+}
+
+.card {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .emoji {
+    font-size: 10rem;
+    margin: 1rem 0;
+    transition: transform 0.3s ease-in-out;
+
+    &.smile {
+      animation: smile 2s infinite alternate;
+    }
+
+    &.pulsate {
+      animation: pulsate 1.5s infinite alternate;
+    }
+  }
+
+  button {
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+    border: 2px solid #0ea5ea;
+    background: transparent;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+    }
+  }
+}
+
+@keyframes smile {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes pulsate {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
