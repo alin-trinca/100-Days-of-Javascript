@@ -49,3 +49,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 43. [Real Time Character Counter](https://alin-trinca.github.io/100-Days-of-Javascript/043%20Real%20Time%20Character%20Counter/dist/index.html)
 44. [Javascript Monthly Calendar](https://alin-trinca.github.io/100-Days-of-Javascript/044%20Javascript%20Monthly%20Calendar/dist/index.html)
 45. [Javascript Emoji Creator](https://alin-trinca.github.io/100-Days-of-Javascript/045%20Javascript%20Emoji%20Creator/dist/index.html)
+46. QR Code Generator
