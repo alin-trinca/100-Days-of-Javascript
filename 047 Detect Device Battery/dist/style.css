@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --gradient-red: linear-gradient(
+    90deg,
+    hsl(7, 89%, 46%) 15%,
+    hsl(11, 93%, 68%) 100%
+  );
+  --gradient-orange: linear-gradient(
+    90deg,
+    hsl(22, 89%, 46%) 15%,
+    hsl(54, 90%, 68%) 100%
+  );
+  --gradient-yellow: linear-gradient(
+    90deg,
+    hsl(54, 89%, 46%) 15%,
+    hsl(92, 90%, 45%) 100%
+  );
+  --gradient-green: linear-gradient(
+    90deg,
+    hsl(92, 89%, 46%) 15%,
+    hsl(92, 90%, 68%) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+}
+
+.battery {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 1.5rem;
+}
+.battery__card {
+  position: relative;
+  width: 270px;
+  height: 240px;
+  background: #131c31;
+  padding: 1rem 2rem;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.battery__text {
+  margin-bottom: 0.5rem;
+}
+.battery__percentage {
+  font-size: 3rem;
+}
+.battery__status {
+  font-size: 1.2rem;
+}
+.battery__status i {
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+}
+.battery__pill {
+  position: relative;
+  width: 75px;
+  height: 180px;
+  background-color: #222;
+  box-shadow: inset 20px 0 48px #292929, inset -4px 12px 48px #8f8f8f;
+  border-radius: 3rem;
+  justify-self: flex-start;
+}
+.battery__level {
+  position: absolute;
+  inset: 2px;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+.battery__liquid {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+  background: var(--gradient-red);
+  box-shadow: inset -10px 0 12px rgba(0, 0, 0, 0.1), inset 12px 0 12px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+.battery__liquid::after {
+  content: "";
+  position: absolute;
+  height: 8px;
+  box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.2);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: -4px;
+  border-radius: 50%;
+}
+
+.green-color {
+  background: var(--gradient-green);
+}
+
+.animated-green {
+  background: var(--gradient-green);
+  animation: animated-charging 1.2s infinite alternate;
+}
+
+.animated-red {
+  background: var(--gradient-red);
+  animation: animated-low 1.2s infinite alternate;
+}
+
+.animated-green,
+.animated-red,
+.green-color {
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.gradient-red,
+.green-red::after {
+  background: var(--gradient-red);
+}
+
+.gradient-green,
+.green-green::after {
+  background: var(--gradient-green);
+}
+
+.gradient-orange,
+.green-orange::after {
+  background: var(--gradient-orange);
+}
+
+.gradient-yellow,
+.green-yellow::after {
+  background: var(--gradient-yellow);
+}
+
+@keyframes animated-charging {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 6px #a9f764;
+  }
+}
+@keyframes animated-low {
+  0% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 8px #de250d;
+  }
+}
