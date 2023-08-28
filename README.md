@@ -51,3 +51,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 45. [Javascript Emoji Creator](https://alin-trinca.github.io/100-Days-of-Javascript/045%20Javascript%20Emoji%20Creator/dist/index.html)
 46. [QR Code Generator](https://alin-trinca.github.io/100-Days-of-Javascript/046%20QR%20Code%20Generator/dist/index.html)
 47. [Detect Device Battery](https://alin-trinca.github.io/100-Days-of-Javascript/047%20Detect%20Device%20Battery/dist/index.html)
+48. [Geometric Art Generator](https://alin-trinca.github.io/100-Days-of-Javascript/048%20Geometric%20Art%20Generator/dist/index.html)
