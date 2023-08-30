@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 050 Animated Template</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css'>
+<link rel='stylesheet' href='https://unpkg.com/aos@2.3.1/dist/aos.css'>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Navigation -->
+<nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+  <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+    <!-- Nav Left Side -->
+    <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+      <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="https://www.creative-tim.com/learning-lab/tailwindcss-starter-project#/presentation">
+        <!-- Nav Title -->
+        Pizza World
+      </a>
+      <!-- Hamburger Menu (Mobile) -->
+      <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+        <!-- Icon -->
+        <i class="text-white fas fa-bars"></i>
+      </button>
+    </div>
+    <!-- Nav Flex Row -->
+    <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
+      <!-- Nav Right Side -->
+      <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+        <!-- Social Media Button -->
+        <li class="flex items-center">
+          <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#">
+            <!-- Icon -->
+            <i class="lg:text-gray-300 text-gray-500 fab fa-facebook text-lg leading-lg "></i>
+            <span class="lg:hidden inline-block ml-2">Share</span>
+          </a>
+        </li>
+        <!-- Social Media Button -->
+        <li class="flex items-center">
+          <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#">
+            <!-- Icon -->
+            <i class="lg:text-gray-300 text-gray-500 fab fa-twitter text-lg leading-lg "></i>
+            <span class="lg:hidden inline-block ml-2">Tweet</span>
+          </a>
+        </li>
+        <!-- Social Media Button -->
+        <li class="flex items-center">
+          <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold" href="#">
+            <!-- Icon -->
+            <i class="lg:text-gray-300 text-gray-500 fab fa-github text-lg leading-lg "></i>
+            <span class="lg:hidden inline-block ml-2">Star</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End of Navigation -->
+
+<main>
+  <!-- Splash Page -->
+  <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+    <!-- Background Image -->
+    <div class="absolute top-0 w-full h-full bg-center bg-cover" style='background-image: url("https://images.unsplash.com/photo-1605478371310-a9f1e96b4ff4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");'>
+      <!-- Overlay -->
+      <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span>
+    </div>
+    <!-- Text Over Main Background -->
+    <div class="container relative mx-auto">
+      <div class="items-center flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+          <div class="pr-12">
+            <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
+              Pizza ipsum dolor amet extra sauce qui meatball
+            </h1>
+            <p class="mt-4 text-lg text-gray-300" data-aos="fade-right" data-aos-delay="1000">
+              Ut sunt meatball beef ham marinara. Cillum platter pork garlic. Adipisicing bacon pan ea, fresh tomatoes enim dolor. Qui buffalo sauce extra cheese, meatball ranch pepperoni bianca NY style bbq rib voluptate aliquip.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Making Polygon Shape in Background -->
+    <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden" style="height: 70px; transform: translateZ(0);">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+  </div>
+  <!-- End of Splash Page -->
+
+  <!-- Services Section -->
+  <section class="pb-20 bg-gray-300 -mt-24">
+    <!-- 3 Card Section -->
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap">
+        <!-- Card -->
+        <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-right" data-aos-delay="1200">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                <!-- Icon -->
+                <i class="fa-solid fa-bacon"></i>
+              </div>
+              <!-- Text Box -->
+              <h6 class="text-xl font-semibold">Beef in pan in do</h6>
+              <p class="mt-2 mb-4 text-gray-600">
+                Bbq white garlic large, broccoli fugiat exercitation pizza black olives excepteur mushrooms thin crust pork.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="1400">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-orange-500">
+                <!-- Icon -->
+                <i class="fa-solid fa-pizza-slice"></i>
+              </div>
+              <!-- Text Box -->
+              <h6 class="text-xl font-semibold">Philly chicken pan aute</h6>
+              <p class="mt-2 mb-4 text-gray-600">
+                Bbq culpa bianca quis aliquip hawaiian enim voluptate philly chicken est thin crust exercitation ullamco thin crust irure.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-left" data-aos-delay="1600">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+            <div class="px-4 py-5 flex-auto">
+              <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                <!-- Icon -->
+                <i class="fa-solid fa-pepper-hot"></i>
+              </div>
+              <!-- Text Box -->
+              <h6 class="text-xl font-semibold">Buffalo sauce deserunt bbq sauce</h6>
+              <p class="mt-2 mb-4 text-gray-600">
+                Do Chicago style elit, pie bbq chicken wing mozzarella id chicken ipsum ex. Pan fugiat consectetur red onions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Box and Card Container -->
+      <div class="flex flex-wrap items-center mt-32">
+        <!-- Text Box Container -->
+        <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="zoom-in-right">
+          <!-- Text Box -->
+          <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+            <!-- Icon -->
+            <i class="fa-solid fa-wheat-awn  text-xl"></i>
+          </div>
+          <h3 class="text-3xl mb-2 font-semibold leading-normal">
+            Pizza roll sint chicken!
+          </h3>
+          <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+            Ricotta enim pepperoni bacon & tomato NY style in. Nulla pork velit, labore meat lovers adipisicing non excepteur duis NY style meatball.
+          </p>
+          <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+            Hand tossed magna white garlic occaecat. Ipsum duis stuffed pineapple. Chicken and bacon broccoli garlic parmesan nisi, magna beef mollit consequat pariatur bbq sauce garlic occaecat.
+          </p>
+          <a href="#" class="font-bold text-gray-800 mt-8">NY style nisi velit extra cheese. !
+          </a>
+        </div>
+
+        <!-- Image Cap & Text Card -->
+        <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
+          <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+            <!-- Image -->
+            <img alt="..." src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" class="w-full align-middle rounded-t-lg" />
+            <blockquote class="relative p-8 mb-4">
+              <!-- Making Polygon Shape in Card -->
+              <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                <polygon points="-30,95 583,95 583,65" class="text-orange-500 fill-current"></polygon>
+              </svg>
+              <!-- Text Box -->
+              <h4 class="text-xl font-bold text-white">
+                Dolor mollit ad sint
+              </h4>
+              <p class="text-md font-light mt-2 text-white">Et reprehenderit consectetur, irure officia mozzarella meatball sausage ut NY style sed ranch.</p>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Services Section -->
+
+  <!-- About Section -->
+  <section class="relative py-20">
+    <!-- Making Polygon Shape in Background -->
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0);">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-white fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+    <!-- Section Container -->
+    <div class="container mx-auto px-4">
+      <div class="items-center flex flex-wrap">
+        <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="flip-right" data-aos-delay="1000">
+          <!-- Image -->
+          <img alt="..." class="max-w-full rounded-lg shadow-lg" src="https://images.unsplash.com/photo-1607018244619-dab6235709dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" />
+        </div>
+        <!-- Text Box Container-->
+        <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-in-left">
+          <div class="md:pr-12">
+            <div class="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-red-400">
+              <!-- Icon -->
+              <i class="fa-solid fa-fire text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h3 class="text-3xl font-semibold">Enim party chicken and bacon</h3>
+            <p class="mt-4 text-lg leading-relaxed text-gray-600">
+              Mayo pepperoni red onions pan chicken green bell peppers extra sauce meat lovers banana peppers lorem sint pork hand tossed onions.
+            </p>
+            <!-- List -->
+            <ul class="list-none mt-6">
+              <li class="py-2">
+                <div class="flex items-center">
+                  <div>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-red-400 mr-3">
+                      <!-- Icon -->
+                      <i class="fa-solid fa-utensils"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 class="text-gray-600">
+                      Ad hand tossed string cheese
+                    </h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center">
+                  <div>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-red-400 mr-3">
+                      <!-- Icon -->
+                      <i class="fa-solid fa-utensils"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 class="text-gray-600">Occaecat tempor philly chicken</h4>
+                  </div>
+                </div>
+              </li>
+              <li class="py-2">
+                <div class="flex items-center">
+                  <div>
+                    <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-white bg-red-400 mr-3">
+                      <!-- Icon -->
+                      <i class="fa-solid fa-utensils"></i>
+                    </span>
+                  </div>
+                  <div>
+                    <h4 class="text-gray-600">Bacon & tomato stuffed laborum pariatur</h4>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of About Section -->
+
+  <!-- Team Section -->
+  <section class="pt-20 pb-48">
+    <!-- Section Container -->
+    <div class="container mx-auto px-4">
+      <!-- Text Box -->
+      <div class="flex flex-wrap justify-center text-center mb-24">
+        <div class="w-full lg:w-6/12 px-4">
+          <h2 class="text-4xl font-semibold">Ad dolore est duis</h2>
+          <p class="text-lg leading-relaxed m-4 text-gray-600">
+            Reprehenderit thin crust pineapple meat lovers in aliqua. Sausage anchovies pepperoni nostrud. Consectetur bacon & tomato dolore, nostrud labore esse.
+          </p>
+        </div>
+      </div>
+      <!-- Flex Row Container -->
+      <div class="flex flex-wrap">
+        <!-- Item -->
+        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in">
+          <div class="px-6">
+            <!-- Image -->
+            <img alt="..." src="https://randomuser.me/api/portraits/men/25.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+            <div class="pt-6 text-center">
+              <h5 class="text-xl font-bold">Ryan Thompson</h5>
+              <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                Pizza cook
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="400">
+          <div class="px-6">
+            <!-- Image -->
+            <img alt="..." src="https://randomuser.me/api/portraits/women/19.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+            <div class="pt-6 text-center">
+              <h5 class="text-xl font-bold">Romina Hadid</h5>
+              <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                Pizza cook
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="600">
+          <div class="px-6">
+            <!-- Image -->
+            <img alt="..." src="https://randomuser.me/api/portraits/women/63.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+            <div class="pt-6 text-center">
+              <h5 class="text-xl font-bold">Alexa Smith</h5>
+              <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                Pizza cook
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in" data-aos-delay="800">
+          <div class="px-6">
+            <!-- Image -->
+            <img alt="..." src="https://randomuser.me/api/portraits/women/67.jpg" class="shadow-lg rounded-full max-w-full mx-auto" style="max-width: 120px;" />
+            <div class="pt-6 text-center">
+              <h5 class="text-xl font-bold">Jenna Kardi</h5>
+              <p class="mt-1 text-sm text-gray-500 uppercase font-semibold">
+                Pizza cook
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Team Section -->
+
+  <!-- Contact Section -->
+  <section class="pb-20 relative block bg-gray-900">
+    <!-- Making Polygon Shape in Background -->
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0);">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-gray-900 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+    <!-- Section Container -->
+    <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+      <!-- Text Box -->
+      <div class="flex flex-wrap text-center justify-center">
+        <div class="w-full lg:w-6/12 px-4">
+          <h2 class="text-4xl font-semibold text-white">Proident ipsum fugiat qui fresh</h2>
+          <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-500">
+            Ranch eu sauteed onions id. String cheese cupidatat ranch, duis fresh tomatoes chicken wing meat lovers beef platter et id dolore hand tossed pariatur excepteur. Black olives occaecat buffalo sauce, aliquip sunt magna dolore.
+          </p>
+        </div>
+      </div>
+      <!-- Flex Row Container -->
+      <div class="flex flex-wrap mt-12 justify-center">
+        <!-- Item -->
+        <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="600">
+          <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+            <!-- Icon -->
+            <i class="fa-solid fa-bicycle text-xl"></i>
+          </div>
+          <!-- Text Box -->
+          <h5 class="text-xl mt-5 font-semibold text-white">
+            Buffalo sauce chicken and bacon
+          </h5>
+          <p class="mt-2 mb-4 text-gray-500">
+            Pepperoni philly chicken lorem incididunt black olives tempor deep crust white garlic
+          </p>
+        </div>
+        <!-- Item -->
+        <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in" data-aos-delay="400">
+          <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+            <!-- Icon -->
+            <i class="fa-solid fa-car-side text-xl"></i>
+          </div>
+          <!-- Text Box -->
+          <h5 class="text-xl mt-5 font-semibold text-white">
+            Thin crust eu nisi commodo
+          </h5>
+          <p class="mt-2 mb-4 text-gray-500">
+            Meat lovers excepteur labore veniam sauteed onions bbq sauce hand tossed peppers.
+          </p>
+        </div>
+
+        <!-- Item -->
+        <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-in">
+          <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+            <!-- Icon -->
+            <i class="fa-solid fa-truck text-xl"></i>
+          </div>
+          <!-- Text Box -->
+          <h5 class="text-xl mt-5 font-semibold text-white">Esse meat lovers</h5>
+          <p class="mt-2 mb-4 text-gray-500">
+            Ex chicken est lorem sed do excepteur officia in incididunt.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="relative block py-24 lg:pt-0 bg-gray-900">
+    <!-- Container -->
+    <div class="container mx-auto px-4" data-aos="fade-in">
+      <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+        <div class="w-full lg:w-6/12 px-4">
+          <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-300">
+            <div class="flex-auto p-5 lg:p-10">
+              <h4 class="text-2xl font-semibold">Quis pan pork bianca?</h4>
+              <p class="leading-relaxed mt-1 mb-4 text-gray-600">
+                Mayo cupidatat marinara pepperoni id ut tempor eiusmod chicken and bacon nulla.
+              </p>
+              <!-- Name -->
+              <div class="relative w-full mb-3 mt-8">
+                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="full-name">
+                  Full Name
+                </label><input type="text" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
+              </div>
+              <!-- Email -->
+              <div class="relative w-full mb-3">
+                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="email">
+                  Email
+                </label><input type="email" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Email" style="transition: all 0.15s ease 0s;" />
+              </div>
+              <!-- Message -->
+              <div class="relative w-full mb-3">
+                <label class="block uppercase text-gray-700 text-xs font-bold mb-2" for="message">
+                  Message
+                </label><textarea rows="4" cols="80" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Type a message..."></textarea>
+              </div>
+              <div class="text-center mt-6">
+                <button class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1" type="button" style="transition: all 0.15s ease 0s;">
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Contact Section -->
+</main>
+
+<!-- Footer Section -->
+<footer class="relative bg-gray-300 pt-8 pb-6">
+  <!-- Making Polygon Shape in Background -->
+  <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20" style="height: 80px; transform: translateZ(0);">
+    <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+      <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+    </svg>
+  </div>
+  <!-- Section Container -->
+  <div class="container mx-auto px-4">
+    <!-- Footer Text -->
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-gray-600 font-semibold py-1">
+          Copyright © Tailwind Starter Kit by
+          <a href="https://www.creative-tim.com" class="text-gray-600 hover:text-gray-900">Creative Tim</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- End of Footer Section -->
+<!-- partial -->
+  <script src='https://unpkg.com/aos@2.3.1/dist/aos.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
