@@ -54,4 +54,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 48. [Geometric Art Generator](https://alin-trinca.github.io/100-Days-of-Javascript/048%20Geometric%20Art%20Generator/dist/index.html)
 49. [Spin the Wheel](https://alin-trinca.github.io/100-Days-of-Javascript/049%20Spin%20the%20Wheel/dist/index.html)
 50. [Animated Template](https://alin-trinca.github.io/100-Days-of-Javascript/050%20Animated%20Template/dist/index.html)
-51. [Math Spring Game](https://alin-trinca.github.io/100-Days-of-Javascript/051%20Math%20Spring%20Game/dist/index.html)
+51. [Math Sprint Game](https://alin-trinca.github.io/100-Days-of-Javascript/051%20Math%20Sprint%20Game/dist/index.html)
