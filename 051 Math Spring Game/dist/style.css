@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.game {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  margin: 15px;
+  user-select: none;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  margin: 20px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splash form {
+  width: 100%;
+}
+.splash .radio-container {
+  width: 100%;
+  height: 75px;
+  padding: 12px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border: 2px solid #222f43;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.splash .radio-container.selected-label {
+  background-color: #0ea5ea;
+  color: #fff;
+}
+.splash .radio-container:hover {
+  color: #fff;
+}
+.splash .radio-container label {
+  font-size: 3rem;
+  padding-left: 15px;
+}
+.splash .radio-container input[type=radio] {
+  opacity: 0;
+  width: 100%;
+  height: 75px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+.splash .best-score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 15px;
+  text-align: center;
+  font-size: 1.6rem;
+  max-width: fit-content;
+}
+.splash .best-score span {
+  margin: 0;
+}
+.splash .best-score span:last-child {
+  font-size: 2.2rem;
+}
+
+.countdown {
+  font-size: 10rem;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.play .height-500 {
+  height: 500px;
+  width: 100%;
+}
+.play .item-container {
+  overflow-y: scroll;
+  position: relative;
+  width: 100%;
+  -ms-overflow-style: none;
+}
+.play .item-container::-webkit-scrollbar {
+  display: none;
+}
+.play .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  font-size: 3rem;
+  user-select: none;
+  position: relative;
+  z-index: 2;
+  color: #fff;
+}
+.play .selected-item {
+  background-color: #0ea5ea;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  max-width: 290px;
+  height: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.play .item-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(10px);
+}
+.play .item-footer .wrong,
+.play .item-footer .right {
+  width: 40%;
+}
+.play .item-footer .wrong {
+  background-color: #da4453;
+  margin-right: 20px;
+}
+.play .item-footer .right {
+  background-color: #37bc9b;
+}
+
+.score .score-container {
+  text-align: center;
+}
+.score .score-container .title {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+.score .score-container .final-time {
+  font-size: 10rem;
+  margin: 0;
+  color: #37bc9b;
+}
+.score .score-container .base-time {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.score .score-container .penalty-time {
+  color: #da4453;
+  margin-bottom: 20px;
+}
+.score .score-footer {
+  width: 100%;
+  height: 90px;
+}
+
+button {
+  cursor: pointer;
+  height: 45px;
+  border-radius: 6px;
+  font-size: 2.4rem;
+  font-family: inherit;
+  color: #fff;
+  border: none;
+  outline: none;
+}
+button:hover {
+  filter: brightness(110%);
+}
+button:active {
+  transform: scale(0.99);
+}
+button.start, button.play-again {
+  width: 100%;
+  background-color: #0ea5ea;
+}
+
+@media screen and (max-width: 480px) {
+  .splash .radio-container label {
+    font-size: 2rem;
+    padding-left: 10px;
+  }
+  .splash .best-score {
+    padding-right: 10px;
+    font-size: 1.4rem;
+  }
+  .splash .best-score span:last-child {
+    font-size: 2rem;
+  }
+}
+/* Media Query: iPhone */

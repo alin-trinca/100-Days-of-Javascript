@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.game {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  margin: 15px;
+  user-select: none;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.card {
+  margin: 20px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.splash {
+  form {
+    width: 100%;
+  }
+
+  .radio-container {
+    width: 100%;
+    height: 75px;
+    padding: 12px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 2px solid #222f43;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &.selected-label {
+      background-color: #0ea5ea;
+      color: #fff;
+    }
+
+    &:hover {
+      color: #fff;
+    }
+
+    label {
+      font-size: 3rem;
+      padding-left: 15px;
+    }
+
+    input[type="radio"] {
+      opacity: 0;
+      width: 100%;
+      height: 75px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+      z-index: 2;
+    }
+  }
+
+  .best-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 15px;
+    text-align: center;
+    font-size: 1.6rem;
+    max-width: fit-content;
+
+    span {
+      margin: 0;
+
+      &:last-child {
+        font-size: 2.2rem;
+      }
+    }
+  }
+}
+
+.countdown {
+  font-size: 10rem;
+  text-align: center;
+  user-select: none;
+  cursor: pointer;
+}
+
+.play {
+  .height-500 {
+    height: 500px;
+    width: 100%;
+  }
+
+  .item-container {
+    overflow-y: scroll;
+    position: relative;
+    width: 100%;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    font-size: 3rem;
+    user-select: none;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+  }
+
+  .selected-item {
+    background-color: #0ea5ea;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-width: 290px;
+    height: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .item-footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(10px);
+
+    .wrong,
+    .right {
+      width: 40%;
+    }
+
+    .wrong {
+      background-color: #da4453;
+      margin-right: 20px;
+    }
+
+    .right {
+      background-color: #37bc9b;
+    }
+  }
+}
+
+.score {
+  .score-container {
+    text-align: center;
+
+    .title {
+      font-size: 4rem;
+      margin-bottom: 20px;
+    }
+
+    .final-time {
+      font-size: 10rem;
+      margin: 0;
+      color: #37bc9b;
+    }
+
+    .base-time {
+      margin-top: 50px;
+      margin-bottom: 20px;
+    }
+
+    .penalty-time {
+      color: #da4453;
+      margin-bottom: 20px;
+    }
+  }
+
+  .score-footer {
+    width: 100%;
+    height: 90px;
+  }
+}
+
+button {
+  cursor: pointer;
+  height: 45px;
+  border-radius: 6px;
+  font-size: 2.4rem;
+  font-family: inherit;
+  color: #fff;
+  border: none;
+  outline: none;
+
+  &:hover {
+    filter: brightness(110%);
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+
+  &.start,
+  &.play-again {
+    width: 100%;
+    background-color: #0ea5ea;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .splash {
+    .radio-container label {
+      font-size: 2rem;
+      padding-left: 10px;
+    }
+    .best-score {
+      padding-right: 10px;
+      font-size: 1.4rem;
+
+      span:last-child {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+/* Media Query: iPhone */
+@media screen and (max-width: 376px) {
+}
