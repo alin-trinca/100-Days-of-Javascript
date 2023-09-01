@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+}
+
+::placeholder {
+  color: #aaa;
+}
+
+.card {
+  width: 360px;
+  height: 400px;
+  text-align: center;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #222f43;
+  border-radius: 10px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+.card h3 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: #b9e0f2;
+}
+.card form {
+  width: 280px;
+  position: absolute;
+  top: 85px;
+  left: 40px;
+  transition: 0.5s;
+}
+.card form input {
+  width: 100%;
+  padding: 10px 5px;
+  margin: 5px 0;
+  border: 0;
+  color: #fff;
+  border-bottom: 2px solid #222f43;
+  outline: none;
+  background: transparent;
+}
+.card #form2 {
+  left: 450px;
+}
+.card #form3 {
+  left: 450px;
+}
+.card .btn-box {
+  width: 100%;
+  margin: 30px auto;
+  text-align: center;
+}
+.card .btn-box button {
+  width: 110px;
+  height: 35px;
+  margin: 0 10px;
+  background: linear-gradient(to right, #0ea5ea, #0bd1d1);
+  border-radius: 30px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  font-family: inherit;
+  cursor: pointer;
+  font-size: 1.6rem;
+}
+
+.step-row {
+  width: 360px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 -1px 5px -1px #000;
+  position: relative;
+}
+.step-row #progress {
+  position: absolute;
+  height: 100%;
+  width: 120px;
+  background-color: #0ea5ea;
+}
+.step-row #progress::after {
+  content: "";
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  border-left: 20px solid #0ea5ea;
+}
+.step-row .step-col {
+  width: 120px;
+  text-align: center;
+  position: relative;
+}
+.step-row small {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
