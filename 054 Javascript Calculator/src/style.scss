@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+}
+
+.calculator {
+  width: calc(100% - 30px);
+  max-width: 360px;
+  text-align: center;
+  margin: 15px;
+  border-radius: 20px;
+  background-color: #292d36;
+  color: #b9e0f2;
+  overflow: hidden;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+
+  &__display {
+    background: #22252d;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 10px 10px 0 0;
+    max-width: 100%;
+
+    h1 {
+      margin: 0;
+      padding: 25px;
+      font-size: 5rem;
+      font-weight: 400;
+      overflow-x: auto;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+
+    button {
+      min-height: 50px;
+      font-size: 2rem;
+      color: #fff;
+      background: #272b33;
+      border: 1px solid #272b33;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        filter: brightness(110%);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+
+      &:focus {
+        outline: none;
+      }
+
+      &.operator {
+        color: #37bc9b;
+        font-size: 3rem;
+      }
+
+      &.clear {
+        background: #ed5565;
+        color: #fff;
+
+        &:hover {
+          filter: brightness(90%);
+        }
+      }
+
+      &.equal-sign {
+        grid-column: -2;
+        grid-row: 2 / span 4;
+        color: #fff;
+        background: #8cc152;
+      }
+    }
+  }
+}
