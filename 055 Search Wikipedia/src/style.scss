@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: #0f172a;
+}
+
+.wiki {
+  padding: 5rem 0;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+}
+
+.form {
+  background-color: #131c31;
+  border: 1px solid #222f43;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: auto 100px;
+
+  &__input,
+  &__btn {
+    height: 50px;
+    padding: 1rem 0.75rem;
+    border: 0;
+    background: #fff;
+  }
+  &__input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+  &__btn {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #0ea5ea;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1.4rem;
+    transition: 0.3s ease-in-out all;
+    cursor: pointer;
+
+    &:hover {
+      color: #111;
+    }
+  }
+}
+
+.results {
+  padding: 3rem 0;
+
+  .error {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.8rem;
+    color: #da4453;
+  }
+
+  .articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    a {
+      display: block;
+      background: #fff;
+      color: #0f172a;
+      padding: 1.5rem 2rem;
+      border: 1px solid #222f43;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: 0.3s ease-in-out all;
+
+      &:hover {
+        background: #0f172a;
+        color: #fff;
+      }
+    }
+    h4 {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.loading {
+  margin: 4rem auto 0;
+  width: 6rem;
+  height: 6rem;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  border-top-color: #0ea5ea;
+  animation: spinner 0.5s linear infinite;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
