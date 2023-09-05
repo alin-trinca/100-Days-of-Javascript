@@ -59,3 +59,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 53. [Drag n' Drop](https://alin-trinca.github.io/100-Days-of-Javascript/053%20Drag%20n'%20Drop/dist/index.html)
 54. [Javascript Calculator](https://alin-trinca.github.io/100-Days-of-Javascript/054%20Javascript%20Calculator/dist/index.html)
 55. [Search Wikipedia](https://alin-trinca.github.io/100-Days-of-Javascript/055%20Search%20Wikipedia/dist/index.html)
+56. [Color Flipper](https://alin-trinca.github.io/100-Days-of-Javascript/056%20Color%20Flipper/dist/index.html)
