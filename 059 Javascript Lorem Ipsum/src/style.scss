@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+  padding: 30px 0;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #b9e0f2;
+}
+
+.lorem-form {
+  text-transform: capitalize;
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  label {
+    font-size: 1.6rem;
+    color: #fff;
+  }
+
+  input {
+    padding: 0.5rem;
+    width: 4rem;
+    border-radius: 4px;
+    border: none;
+    margin: 0 1rem;
+    font-size: 1.6rem;
+  }
+
+  button {
+    background-color: #0ea5ea;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    letter-spacing: 1px;
+    display: inline-block;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3 linear;
+  }
+}
+
+.lorem-text {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  padding: 20px 20px 10px 20px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+
+  .result {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+}
