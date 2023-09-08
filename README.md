@@ -61,3 +61,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 55. [Search Wikipedia](https://alin-trinca.github.io/100-Days-of-Javascript/055%20Search%20Wikipedia/dist/index.html)
 56. [Color Flipper](https://alin-trinca.github.io/100-Days-of-Javascript/056%20Color%20Flipper/dist/index.html)
 57. [Javascript Simple Counter](https://alin-trinca.github.io/100-Days-of-Javascript/057%20Javascript%20Simple%20Counter/dist/index.html)
+58. [Javascript Reviews](https://alin-trinca.github.io/100-Days-of-Javascript/058%20Javascript%20Reviews/dist/index.html)
