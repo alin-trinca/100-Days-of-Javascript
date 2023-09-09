@@ -63,3 +63,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 57. [Javascript Simple Counter](https://alin-trinca.github.io/100-Days-of-Javascript/057%20Javascript%20Simple%20Counter/dist/index.html)
 58. [Javascript Reviews](https://alin-trinca.github.io/100-Days-of-Javascript/058%20Javascript%20Reviews/dist/index.html)
 59. [Javascript Lorem Ipsum](https://alin-trinca.github.io/100-Days-of-Javascript/059%20Javascript%20Lorem%20Ipsum/dist/index.html)
+60. [Javascript Dad Jokes](https://alin-trinca.github.io/100-Days-of-Javascript/060%20Javascript%20Dad%20Jokes/dist/index.html)
