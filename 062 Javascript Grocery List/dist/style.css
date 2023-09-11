@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+}
+
+.grocery {
+  width: calc(100% - 30px);
+  max-width: 480px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+.grocery .alert {
+  margin-bottom: 1rem;
+  display: grid;
+  align-items: center;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 6px;
+}
+.grocery .alert.alert-danger {
+  color: #a94442;
+  background-color: #f2838f;
+}
+.grocery .alert.alert-success {
+  color: #3c763d;
+  background-color: #b9df90;
+}
+.grocery .grocery-form h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.grocery .form-control {
+  display: flex;
+  justify-content: center;
+}
+.grocery .form-control input {
+  height: 40px;
+  font-size: 1.6rem;
+  padding: 0 15px;
+  flex: 1 0 auto;
+  background: transparent;
+  color: #fff;
+  border: 2px solid #222f43;
+  border-radius: 6px 0 0 6px;
+  outline: 0;
+  transition: all 0.3s ease;
+}
+.grocery .form-control input::placeholder {
+  font-family: inherit;
+  color: #ddd;
+}
+.grocery .form-control .submit-btn {
+  background-color: #b9e0f2;
+  border-color: transparent;
+  flex: 0 0 5rem;
+  display: grid;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 700;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.grocery .form-control .submit-btn:hover {
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.grocery .grocery-container {
+  margin-top: 2rem;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.grocery .show-container {
+  visibility: visible;
+}
+.grocery .grocery-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+  padding: 0.25rem 1rem;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+.grocery .grocery-item:hover {
+  background: #222f43;
+}
+.grocery .title {
+  font-size: 1.6rem;
+  margin-bottom: 0;
+  transition: all 0.3s ease;
+}
+.grocery .edit-btn,
+.grocery .delete-btn {
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+.grocery .edit-btn {
+  color: #8cc152;
+}
+.grocery .edit-btn:hover {
+  color: #a0d468;
+}
+.grocery .delete-btn {
+  color: #e9573f;
+}
+.grocery .delete-btn:hover {
+  color: #fc6e51;
+}
+.grocery .clear-btn {
+  width: 10rem;
+  height: 1.5rem;
+  display: grid;
+  align-items: center;
+  background: transparent;
+  border-color: transparent;
+  color: #da4453;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+}
+.grocery .clear-btn:hover {
+  color: #ed5565;
+}
