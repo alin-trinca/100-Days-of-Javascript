@@ -66,3 +66,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 60. [Javascript Dad Jokes](https://alin-trinca.github.io/100-Days-of-Javascript/060%20Javascript%20Dad%20Jokes/dist/index.html)
 61. [Javascript CountTo](https://alin-trinca.github.io/100-Days-of-Javascript/061%20Javascript%20CountTo/dist/index.html)
 62. [Javascript Grocery List](https://alin-trinca.github.io/100-Days-of-Javascript/062%20Javascript%20Grocery%20List/dist/index.html)
+63. [Internet Connection Detector](https://alin-trinca.github.io/100-Days-of-Javascript/063%20Internet%20Connection%20Detector/dist/index.html)
