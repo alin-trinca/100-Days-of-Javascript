@@ -69,3 +69,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 63. [Internet Connection Detector](https://alin-trinca.github.io/100-Days-of-Javascript/063%20Internet%20Connection%20Detector/dist/index.html)
 64. [Animated Vertical Tabs](https://alin-trinca.github.io/100-Days-of-Javascript/064%20Animated%20Vertical%20Tabs/dist/index.html)
 65. [Before After Slider](https://alin-trinca.github.io/100-Days-of-Javascript/065%20Before%20After%20Slider/dist/index.html)
+66. [Javascript Typing Effect](https://alin-trinca.github.io/100-Days-of-Javascript/066%20Javascript%20Typing%20Effect/dist/index.html)
