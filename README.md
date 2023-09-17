@@ -71,3 +71,4 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 65. [Before After Slider](https://alin-trinca.github.io/100-Days-of-Javascript/065%20Before%20After%20Slider/dist/index.html)
 66. [Javascript Typing Effect](https://alin-trinca.github.io/100-Days-of-Javascript/066%20Javascript%20Typing%20Effect/dist/index.html)
 67. [Custom Captcha Generator](https://alin-trinca.github.io/100-Days-of-Javascript/067%20Custom%20Captcha%20Generator/dist/index.html)
+68. [Password Validation Check](https://alin-trinca.github.io/100-Days-of-Javascript/068%20Password%20Validation%20Check/dist/index.html)
