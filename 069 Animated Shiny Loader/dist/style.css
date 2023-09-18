@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+}
+
+.outer {
+  height: 300px;
+  width: 300px;
+  background: linear-gradient(135deg, #feed07 0%, #fe6a50 5%, #ed00aa 15%, #2fe3fe 50%, #8900ff 100%);
+  border-radius: 50%;
+}
+.outer.active-loader {
+  animation: rotate 2s ease infinite;
+}
+.outer.active-loader-2 {
+  animation: rotate2 3s ease;
+}
+
+.inner {
+  position: absolute;
+  width: 275px;
+  height: 275px;
+  text-align: center;
+  line-height: 275px;
+  background: #0f172a;
+  border-radius: 50%;
+  cursor: default;
+}
+.inner span {
+  font-size: 6rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #feed07 0%, #fe6a50 5%, #ed00aa 15%, #2fe3fe 50%, #8900ff 100%);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-size: 300%;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  to {
+    transform: rotate(360deg);
+  }
+}
