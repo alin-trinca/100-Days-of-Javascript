@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  color: #fff;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+}
+
+.translator {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+
+  .wrapper {
+    border-radius: 20px;
+    border: 2px solid #222f43;
+  }
+}
+
+.text-input {
+  display: flex;
+  border-bottom: 2px solid #222f43;
+
+  .to-text {
+    border-radius: 0;
+    border-left: 2px solid #222f43;
+  }
+
+  textarea {
+    height: 250px;
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+    background: none;
+    font-size: 1.8rem;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+
+    &::placeholder {
+      color: #b7b6b6;
+    }
+  }
+}
+
+%placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.controls {
+  @extend %placeholder;
+  list-style: none;
+  padding: 12px 15px;
+
+  li {
+    @extend %placeholder;
+  }
+
+  .row .icons {
+    width: 38%;
+    @extend %placeholder;
+
+    i {
+      width: 50px;
+      color: #b9e0f2;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      justify-content: center;
+      @extend %placeholder;
+
+      &:active {
+        transform: scale(0.9);
+      }
+    }
+  }
+
+  .row.from .icons {
+    padding-right: 15px;
+    border-right: 2px solid #222f43;
+  }
+
+  .exchange {
+    cursor: pointer;
+    font-size: 1.8rem;
+    transition: transform 0.2s ease;
+  }
+
+  .row.to .icons {
+    padding-left: 15px;
+    border-left: 2px solid #222f43;
+  }
+
+  .row select {
+    color: #b9e0f2;
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    font-family: inherit;
+    background: none;
+    padding-left: 5px;
+  }
+}
+
+button {
+  background-color: #b9e0f2;
+  margin-top: 20px;
+  border: 0;
+  border-radius: 10px;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 575px) {
+  .text-input {
+    flex-direction: column;
+
+    .to-text {
+      border-left: 0;
+      border-top: 2px solid #222f43;
+    }
+
+    textarea {
+      height: 200px;
+    }
+  }
+
+  .controls {
+    .row .icons {
+      display: none;
+    }
+
+    .row select {
+      font-size: 1.6rem;
+    }
+
+    .exchange {
+      font-size: 1.4rem;
+    }
+  }
+
+  button {
+    padding: 13px;
+    font-size: 1.6rem;
+  }
+}
