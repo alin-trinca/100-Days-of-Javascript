@@ -1,4 +1,4 @@
-const languages = {
+const countries = {
   "am-ET": "Amharic",
   "ar-SA": "Arabic",
   "be-BY": "Bielarus",
@@ -95,76 +95,77 @@ const languages = {
   "wo-SN": "Wolof",
   "xh-ZA": "Xhosa",
   "yi-YD": "Yiddish",
-  "zu-ZA": "Zulu"
+  "zu-ZA": "Zulu",
 };
 
 const fromText = document.querySelector(".from-text");
 const toText = document.querySelector(".to-text");
-const exchangeIcon = document.querySelector(".exchange");
-const selectTags = document.querySelectorAll("select");
+const exchageIcon = document.querySelector(".exchange");
+const selectTag = document.querySelectorAll("select");
 const icons = document.querySelectorAll(".row i");
 const translateBtn = document.querySelector("button");
 
-// Populate select tags with language options
-selectTags.forEach((selectTag, index) => {
-  for (const languageCode in languages) {
+// Populate select options for both languages
+selectTag.forEach((tag, id) => {
+  for (let country_code in countries) {
     const selected =
-      (index === 0 && languageCode === "en-GB") ||
-      (index === 1 && languageCode === "de-DE")
+      (id === 0 && country_code === "en-GB") ||
+      (id === 1 && country_code === "de-DE")
         ? "selected"
         : "";
-
-    const option = `<option ${selected} value="${languageCode}">${languages[languageCode]}</option>`;
-    selectTag.insertAdjacentHTML("beforeend", option);
+    const option = `<option ${selected} value="${country_code}">${countries[country_code]}</option>`;
+    tag.insertAdjacentHTML("beforeend", option);
   }
 });
 
-// Swap the content of 'fromText' and 'toText' and exchange selected options
-exchangeIcon.addEventListener("click", () => {
-  const tempText = fromText.value;
-  fromText.value = toText.value;
-  toText.value = tempText;
-
-  const tempLang = selectTags[0].value;
-  selectTags[0].value = selectTags[1].value;
-  selectTags[1].value = tempLang;
+// Swap text and language on exchange icon click
+exchageIcon.addEventListener("click", () => {
+  [fromText.value, toText.value] = [toText.value, fromText.value];
+  [selectTag[0].value, selectTag[1].value] = [
+    selectTag[1].value,
+    selectTag[0].value,
+  ];
 });
 
-// Handle input in 'fromText'
-fromText.addEventListener("keyup", () => {
-  if (!fromText.value) {
-    toText.value = "";
-  }
-});
-
-// Translate button click event
+// Handle translation on button click
 translateBtn.addEventListener("click", () => {
   const text = fromText.value.trim();
-  const translateFrom = selectTags[0].value;
-  const translateTo = selectTags[1].value;
+  const translateFrom = selectTag[0].value;
+  const translateTo = selectTag[1].value;
 
   if (!text) return;
 
   toText.setAttribute("placeholder", "Translating...");
 
-  const apiUrl = `https://api.mymemory.translated.net/get?q=${text}&langpair=${translateFrom}|${translateTo}`;
+  // Split the input text into words
+  const words = text.split(/\s+/);
+  const translatedWords = [];
 
-  fetch(apiUrl)
-    .then((res) => res.json())
-    .then((data) => {
-      toText.value = data.responseData.translatedText;
+  // Translate each word separately
+  const translateWord = async (word) => {
+    const apiUrl = `https://api.mymemory.translated.net/get?q=${encodeURIComponent(
+      word
+    )}&langpair=${translateFrom}|${translateTo}`;
 
-      data.matches.forEach((data) => {
-        if (data.id === 0) {
-          toText.value = data.translation;
-        }
-      });
+    try {
+      const response = await fetch(apiUrl);
+      const data = await response.json();
+      if (data.responseData) {
+        translatedWords.push(data.responseData.translatedText);
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
 
-      toText.setAttribute("placeholder", "Translation");
-    });
+  // Use Promise.all to translate all words concurrently
+  Promise.all(words.map(translateWord)).then(() => {
+    toText.value = translatedWords.join(" "); // Join the translated words back into a sentence
+    toText.setAttribute("placeholder", "Translation");
+  });
 });
 
-// Event listeners for copy and speak icons
+// Handle copy and speech icons
 icons.forEach((icon) => {
   icon.addEventListener("click", ({ target }) => {
     if (!fromText.value || !toText.value) return;
@@ -177,7 +178,7 @@ icons.forEach((icon) => {
         target.id === "from" ? fromText.value : toText.value
       );
       utterance.lang =
-        target.id === "from" ? selectTags[0].value : selectTags[1].value;
+        target.id === "from" ? selectTag[0].value : selectTag[1].value;
       speechSynthesis.speak(utterance);
     }
   });
