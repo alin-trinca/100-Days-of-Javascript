@@ -76,4 +76,6 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 70. [Javascript Type Test](https://alin-trinca.github.io/100-Days-of-Javascript/070%20Javascript%20Type%20Test/dist/index.html)
 71. [Javascript Translator](https://alin-trinca.github.io/100-Days-of-Javascript/071%20Javascript%20Translator/dist/index.html)
 72. [Text to Speech](https://alin-trinca.github.io/100-Days-of-Javascript/072%20Text%20to%20Speech/dist/index.html)
+73. [Purple Heart Rain](https://alin-trinca.github.io/100-Days-of-Javascript/073%20Purple%20Heart%20Rain/dist/index.html)
+
 
