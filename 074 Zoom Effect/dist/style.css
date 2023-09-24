@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+}
+
+#card {
+  height: 500px;
+  width: calc(100% - 30px);
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+img {
+  transform-origin: center center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  cursor: progress;
+}
