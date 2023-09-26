@@ -78,5 +78,6 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 72. [Text to Speech](https://alin-trinca.github.io/100-Days-of-Javascript/072%20Text%20to%20Speech/dist/index.html)
 73. [Purple Heart Rain](https://alin-trinca.github.io/100-Days-of-Javascript/073%20Purple%20Heart%20Rain/dist/index.html)
 74. [Zoom Effect](https://alin-trinca.github.io/100-Days-of-Javascript/074%20Zoom%20Effect/dist/index.html)
+75. [Javascript Particles](https://alin-trinca.github.io/100-Days-of-Javascript/075%20Javascript%20Particles/dist/index.html)
 
 
