@@ -81,5 +81,6 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 75. [Javascript Particles](https://alin-trinca.github.io/100-Days-of-Javascript/075%20Javascript%20Particles/dist/index.html)
 76. [Find the Winner](https://alin-trinca.github.io/100-Days-of-Javascript/076%20Find%20the%20Winner/dist/index.html)
 77. [Panda Eyes](https://alin-trinca.github.io/100-Days-of-Javascript/077%20Panda%20Eyes/dist/index.html)
+78. [Content Placeholder](https://alin-trinca.github.io/100-Days-of-Javascript/078%20Content%20Placeholder/dist/index.html)
 
 
