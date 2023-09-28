@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  width: calc(100% - 30px);
+  max-width: 400px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  color: #b9e0f2;
+  overflow: hidden;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+.card__header {
+  height: 200px;
+}
+.card__header img {
+  display: none;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.card__content {
+  background-color: #131c31;
+  padding: 30px;
+}
+.card__title {
+  font-size: 2rem;
+  height: 20px;
+  margin: 0;
+}
+.card__excerpt {
+  color: #fff;
+  font-size: 1.4rem;
+  margin: 20px 0;
+}
+
+.author {
+  display: flex;
+}
+.author__img {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 50px;
+  height: 50px;
+}
+.author__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 10px;
+  font-size: 1.6rem;
+  width: 200px;
+}
+.author__info small {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-top: 5px;
+}
+
+.animated__bg {
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 10%, #f6f7f8 20%, #f6f7f8 100%);
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+}
+.animated__bg--text {
+  border-radius: 50px;
+  display: inline-block;
+  margin: 0;
+  height: 10px;
+  width: 100%;
+}
+
+@-webkit-keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: -150% 0;
+  }
+}
