@@ -85,5 +85,6 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 79. [Testimonial Design](https://alin-trinca.github.io/100-Days-of-Javascript/079%20Testimonial%20Design/dist/index.html)
 80. [Background Slider](https://alin-trinca.github.io/100-Days-of-Javascript/080%20Background%20Slider/dist/index.html)
 81. [Javascript Waves](https://alin-trinca.github.io/100-Days-of-Javascript/081%20Javascript%20Waves/dist/index.html)
+82. [Rain Drops](https://alin-trinca.github.io/100-Days-of-Javascript/082%20Rain%20Drops/dist/index.html)
 
 
