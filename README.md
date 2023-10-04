@@ -87,5 +87,6 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 81. [Javascript Waves](https://alin-trinca.github.io/100-Days-of-Javascript/081%20Javascript%20Waves/dist/index.html)
 82. [Rain Drops](https://alin-trinca.github.io/100-Days-of-Javascript/082%20Rain%20Drops/dist/index.html)
 83. [Traffic Lights](https://alin-trinca.github.io/100-Days-of-Javascript/083%20Traffic%20Lights/dist/index.html)
+84. [Sortable List](https://alin-trinca.github.io/100-Days-of-Javascript/084%20Sortable%20List/dist/index.html)
 
 
