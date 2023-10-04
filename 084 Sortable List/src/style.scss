@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+}
+
+.sortable-list {
+  width: calc(100% - 30px);
+  max-width: 480px;
+  margin: 15px;
+  padding: 20px;
+  background-color: #131c31;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+
+  .item {
+    list-style: none;
+    display: flex;
+    cursor: move;
+    background-color: #0f172a;
+    align-items: center;
+    border: 1px solid #222f43;
+    border-radius: 6px;
+    padding: 10px 15px;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    i {
+      color: #fff;
+      font-size: 1.8rem;
+    }
+    &.dragging {
+      opacity: 0.75;
+    }
+    &.dragging :where(.details, i) {
+      opacity: 0;
+    }
+  }
+
+  .details {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 45px;
+      width: 45px;
+      pointer-events: none;
+      margin-right: 15px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    span {
+      color: #b9e0f2;
+      font-size: 1.4rem;
+    }
+  }
+}
