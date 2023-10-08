@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+}
+
+.wrapper {
+  width: calc(100% - 30px);
+  max-width: 480px;
+  margin: 15px;
+
+  &__input {
+    background-color: #131c31;
+    padding: 20px;
+    border: 1px solid #222f43;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1em;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+
+    input,
+    button {
+      font-size: 1.6rem;
+      font-weight: 700;
+      border: none;
+      outline: none;
+      border-radius: 6px;
+    }
+    input {
+      background-color: #eeeeff;
+      color: #0f172a;
+      padding: 1.2em 1.25em;
+    }
+    button {
+      color: #fff;
+      font-family: inherit;
+      background-color: #0ea5ea;
+      cursor: pointer;
+    }
+  }
+
+  &__output {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      height: 100px;
+      width: 100px;
+      border: 1px solid #222f43;
+      border-radius: 10px;
+      background-color: #131c31;
+      color: #b9e0f2;
+      display: grid;
+      place-items: center;
+      padding: 1.25em 0;
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    span {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
