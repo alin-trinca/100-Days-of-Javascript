@@ -90,6 +90,9 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 84. [Sortable List](https://alin-trinca.github.io/100-Days-of-Javascript/084%20Sortable%20List/dist/index.html)
 85. [Good, Cheap & Fast](https://alin-trinca.github.io/100-Days-of-Javascript/085%20Good,%20Cheap%20&%20Fast/dist/index.html)
 86. [Flashlight Effect](https://alin-trinca.github.io/100-Days-of-Javascript/086%20Flashlight%20Effect/dist/index.html)
+87. [Javascript Stopwatch](https://alin-trinca.github.io/100-Days-of-Javascript/087%20Javascript%20Stopwatch/dist/index.html)
+88. [Javascript Age Calculator](https://alin-trinca.github.io/100-Days-of-Javascript/088%20Javascript%20Age%20Calculator/dist/index.html)
+89. [Number to Roman Generator](https://alin-trinca.github.io/100-Days-of-Javascript/089%20Number%20to%20Roman%20Generator/dist/index.html)
 
 
 
