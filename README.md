@@ -94,6 +94,7 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 88. [Javascript Age Calculator](https://alin-trinca.github.io/100-Days-of-Javascript/088%20Javascript%20Age%20Calculator/dist/index.html)
 89. [Number to Roman Generator](https://alin-trinca.github.io/100-Days-of-Javascript/089%20Number%20to%20Roman%20Generator/dist/index.html)
 90. [Javascript 2048 Game](https://alin-trinca.github.io/100-Days-of-Javascript/090%20Javascript%202048%20Game/dist/index.html)
+91. [Snowfall Effect](https://alin-trinca.github.io/100-Days-of-Javascript/091%20Snowfall%20Effect/dist/index.html)
 
 
 
