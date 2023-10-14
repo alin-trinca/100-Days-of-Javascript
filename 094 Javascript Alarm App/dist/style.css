@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+}
+
+.hide {
+  display: none;
+}
+
+.alarm {
+  width: calc(100% - 30px);
+  max-width: 480px;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.25);
+}
+.alarm .timer {
+  font-size: 5rem;
+  text-align: center;
+}
+.alarm .inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.alarm .inputs input {
+  width: 7rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: 1px solid #222f43;
+  border-radius: 5px;
+  padding: 10px;
+}
+.alarm #set {
+  background-color: #0ea5ea;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1.6rem;
+  padding: 10px 20px;
+  display: block;
+  margin: 20px auto 50px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.alarm__item {
+  display: grid;
+  grid-template-columns: 9fr 2fr 1fr;
+  gap: 1em;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+.alarm__item:not(:last-child) {
+  border-bottom: 2px solid #222f43;
+  padding-bottom: 20px;
+}
+.alarm__item input[type=checkbox] {
+  appearance: none;
+  height: 2em;
+  width: 5rem;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+}
+.alarm__item input[type=checkbox]:before {
+  position: absolute;
+  content: "";
+  background-color: #0ea5ea;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  top: 0.3rem;
+  left: 0.3rem;
+}
+.alarm__item input[type=checkbox]:checked {
+  background-color: #b9e0f2;
+}
+.alarm__item input[type=checkbox]:checked:before {
+  background-color: #377dff;
+  left: 2.7rem;
+}
+.alarm .deleteButton {
+  background-color: transparent;
+  font-size: 1.6rem;
+  color: #0ea5ea;
+  border: none;
+  cursor: pointer;
+}
+.alarm .deleteButton:hover {
+  color: #fff;
+}
