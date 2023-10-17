@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0f172a;
+}
+
+.search {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.search__wrapper {
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.25em;
+}
+.search__wrapper input {
+  font-size: 1.6rem;
+  font-family: inherit;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  color: #0f172a;
+}
+.search__wrapper button {
+  background-color: #0ea5ea;
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: #fff;
+  padding: 1.25rem 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.result__info {
+  width: 50%;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+.result__info img {
+  display: block;
+  width: 45%;
+  min-width: 150px;
+  margin: auto;
+}
+.result__info h1 {
+  font-size: 2rem;
+  margin: 1rem 0 1.5rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff;
+  position: relative;
+}
+.result__wrapper h3 {
+  font-size: 1.6em;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  color: #b9e0f2;
+}
+.result__wrapper ul {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  color: #fff;
+  font-size: 1.4rem;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.result__wrapper ul li {
+  margin-bottom: 0.5rem;
+}
+.result__wrapper p {
+  text-align: justify;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.error {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #da4453;
+}
+
+@media only screen and (max-width: 575px) {
+  .result {
+    flex-direction: column;
+  }
+}
