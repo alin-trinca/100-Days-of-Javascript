@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  background-color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  width: 360px;
+  height: 360px;
+  position: relative;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.base,
+#scratch {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  cursor: grabbing;
+  border-radius: 10px;
+}
+
+.base {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1.2em 2.5em rgba(16, 2, 96, 0.15);
+}
+.base h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0ea5ea;
+}
+.base h2 {
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+#scratch {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
