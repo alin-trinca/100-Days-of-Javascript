@@ -97,6 +97,10 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 91. [Snowfall Effect](https://alin-trinca.github.io/100-Days-of-Javascript/091%20Snowfall%20Effect/dist/index.html)
 92. [Javascript Dynamic Greetings](https://alin-trinca.github.io/100-Days-of-Javascript/092%20Javascript%20Dynamic%20Greetings/dist/index.html)
 93. [Tip Calculator](https://alin-trinca.github.io/100-Days-of-Javascript/093%20Tip%20Calculator/dist/index.html)
+94. [Javascript Alarm App](https://alin-trinca.github.io/100-Days-of-Javascript/094%20Javascript%20Alarm%20App/dist/index.html)
+95. [Javascript Country Guide](https://alin-trinca.github.io/100-Days-of-Javascript/095%20Javascript%20Country%20Guide/dist/index.html)
+96. [Javascript Cocktail App](https://alin-trinca.github.io/100-Days-of-Javascript/096%20Javascript%20Cocktail%20App/dist/index.html)
+97. [Javascript Scratch Card](https://alin-trinca.github.io/100-Days-of-Javascript/097%20Javascript%20Scratch%20Card/dist/index.html)
 
 
 
