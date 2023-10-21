@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+}
+
+.guess {
+  width: calc(100% - 30px);
+  max-width: 640px;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #222f43;
+  border-radius: 20px;
+  background-color: #131c31;
+  color: #b9e0f2;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
+
+  &__tries {
+    text-align: right;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+
+    span {
+      font-weight: 700;
+      margin-right: 3px;
+    }
+  }
+
+  &__emoji {
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__letters {
+    margin: 2rem 0 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+
+    .letter {
+      width: 4rem;
+      height: 4rem;
+      background-color: #fff;
+      font-size: 1.6rem;
+      font-weight: 700;
+      font-family: inherit;
+      border: 0;
+      border-radius: 4px;
+      color: #0f172a;
+      cursor: pointer;
+
+      &.used {
+        background-color: #6c757d;
+        opacity: 0.65;
+        color: #fff;
+        pointer-events: none;
+      }
+    }
+  }
+}
+
+#userInput {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  span {
+    font-size: 3rem;
+  }
+}
+
+.controls {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0f172a;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+
+  #result {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+
+  #start {
+    font-size: 2rem;
+    font-family: inherit;
+    font-weight: 700;
+    padding: 1rem 5rem;
+    border: 2px solid #0ea5ea;
+    background: transparent;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      background: linear-gradient(90deg, #0ea5ea, #0bd1d1 51%, #0ea5ea);
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
