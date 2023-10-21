@@ -102,6 +102,7 @@ _100 Days of JavaScript_ is a personal project where I commit to coding and shar
 96. [Javascript Cocktail App](https://alin-trinca.github.io/100-Days-of-Javascript/096%20Javascript%20Cocktail%20App/dist/index.html)
 97. [Javascript Scratch Card](https://alin-trinca.github.io/100-Days-of-Javascript/097%20Javascript%20Scratch%20Card/dist/index.html)
 98. [Javascript Math Game](https://alin-trinca.github.io/100-Days-of-Javascript/098%20Javascript%20Math%20Game/dist/index.html)
+99. [Image Editor](https://alin-trinca.github.io/100-Days-of-Javascript/099%20Image%20Editor/dist/index.html)
 
 
 
